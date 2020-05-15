@@ -1,0 +1,92 @@
+:root {
+    @media all and (min-width: 960px) and (max-width: 1200px) {
+        --author-size: 16px;
+        --logo-width: 125px;
+        --machine-size: 13.5px;
+        --machine-width: 22.5%;
+    }
+    @media all and (min-width: 768px) and (max-width: 960px) {
+        --logo-top: 12.5%;
+        --author-size: 16px;
+        --logo-width: 120px;
+        --machine-size: 13.25px;
+        --machine-width: 30%;
+    }
+    @media all and (min-width: 600px) and (max-width: 768px) {
+        --author-size: 18px;
+        --nav-size: 13.5px;
+        --machine-size: 13.5px;
+        --nets-size: 14px;
+        --nets-size-hover: 19px;
+        /*-----------------*/
+        --nav-height: 65px;
+        /*-----------------*/
+        --logo-width: 120px;
+        --machine-width: 36%;
+        /*-----------------*/
+        --author-bottom: 40px;
+        --machine-bottom: 40px;
+        /*-----------------*/
+        --nav-margin: 25px;
+        --content-top: 15px;
+        /*-----------------*/
+        --nets-top: 15%;
+        --logo-top: 15%;
+    }
+    @media only screen and (min-width: 480px) and (max-width: 600px) {
+        --machine-width: 36%;
+    }
+    @media only screen and (max-width: 480px) {
+        --machine-size: 13.5px;
+        --machine-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nets {
+        display: none;
+    }
+    .navbar {
+        height: 50px;
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        .navbar__list {
+            position: fixed;
+            background: #1d976c;
+            background: -webkit-linear-gradient( to right, #93f9b9, #1d976c);
+            background: linear-gradient( to right, #93f9b9, #1d976c);
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            clip-path: circle(0.0% at 100% 0);
+            transition: ease-in-out 0.45s;
+            li a {
+                color: white;
+                font-size: 19px;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+        }
+        .menu2 {
+            -webkit-clip-path: circle(141.4% at 100% 0);
+            clip-path: circle(141.4% at 100% 0);
+        }
+        .navbar__hamburger {
+            padding-top: 45px;
+            display: block;
+            margin-right: 35px;
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            #icon2 {
+                display: none;
+            }
+        }
+    }
+}
