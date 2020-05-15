@@ -1,44 +1,56 @@
 :root {
     @media all and (min-width: 960px) and (max-width: 1200px) {
-        --author-size: 16px;
-        --logo-width: 125px;
-        --machine-size: 13.5px;
-        --machine-width: 22.5%;
+        --logo-width: 160px;
+        --machine-size: 14px;
+        --machine-width: 25%;
+        --machine-left: 8%;
+        --logo-top: 12%;
     }
     @media all and (min-width: 768px) and (max-width: 960px) {
-        --logo-top: 12.5%;
-        --author-size: 16px;
-        --logo-width: 120px;
-        --machine-size: 13.25px;
+        --logo-top: 15%;
+        --logo-width: 165px;
+        --machine-size: 14px;
         --machine-width: 30%;
+        --machine-left: 6%;
+        --nav-size: 13px;
     }
     @media all and (min-width: 600px) and (max-width: 768px) {
-        --author-size: 18px;
-        --nav-size: 13.5px;
-        --machine-size: 13.5px;
+        --nav-size: 12.5px;
+        --machine-size: 14.5px;
         --nets-size: 14px;
         --nets-size-hover: 19px;
         /*-----------------*/
-        --nav-height: 65px;
+        --nav-height: 50px;
         /*-----------------*/
-        --logo-width: 120px;
+        --logo-width: 165px;
         --machine-width: 36%;
         /*-----------------*/
-        --author-bottom: 40px;
         --machine-bottom: 40px;
+        --machine-left: 8%;
         /*-----------------*/
         --nav-margin: 25px;
         --content-top: 15px;
         /*-----------------*/
         --nets-top: 15%;
-        --logo-top: 15%;
+        --logo-top: 20%;
     }
     @media only screen and (min-width: 480px) and (max-width: 600px) {
-        --machine-width: 36%;
+        --logo-width: 165px;
+        --machine-width: 42.5%;
+        --machine-left: 2%;
+        --machine-bottom: 65px;
+        --machine-top: 9%;
+        --logo-top: 12.5%;
+        --machine-size: 13.5px;
     }
     @media only screen and (max-width: 480px) {
+        --logo-top: 18%;
+        --machine-bottom: 65px;
+        --machine-top: 10%;
+        --logo-width: 170px;
         --machine-size: 13.5px;
         --machine-width: 60%;
+        --machine-left: 8%;
     }
 }
 
@@ -78,9 +90,9 @@
             clip-path: circle(141.4% at 100% 0);
         }
         .navbar__hamburger {
-            padding-top: 45px;
+            padding-top: 55px;
             display: block;
-            margin-right: 35px;
+            margin-right: 50px;
             color: white;
             font-size: 30px;
             position: absolute;

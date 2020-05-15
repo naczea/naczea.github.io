@@ -18,25 +18,25 @@ ul {
   outline: none; }
 
 :root {
-  --author-size: 20px;
   --nav-size: 14px;
-  --machine-size: 14.5px;
+  --machine-size: 15.5px;
   --nets-size: 17.5px;
   --nets-size-hover: 22px;
   /*-----------------*/
   --nav-height: 50px;
   /*-----------------*/
-  --logo-width: 150px;
-  --machine-width: 16%;
+  --logo-width: 190px;
+  --machine-width: 25%;
+  --machine-left: 10%;
   /*-----------------*/
-  --author-bottom: 60px;
-  --machine-bottom: 40px;
+  --machine-bottom: 50px;
+  --machine-top: 4%;
   /*-----------------*/
   --nav-margin: 40px;
   --content-top: 10px;
   /*-----------------*/
   --nets-top: 40%;
-  --logo-top: 8%; }
+  --logo-top: 9%; }
 
 header {
   background-image: url(../../img/loginv4.svg);
@@ -91,7 +91,7 @@ header {
 .conthead {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   height: auto;
   width: 100%;
@@ -99,22 +99,20 @@ header {
   .conthead .conthead__logo {
     margin-top: var(--logo-top);
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 15px; }
     .conthead .conthead__logo img {
       width: var(--logo-width);
       height: auto; }
-  .conthead .conthead__author {
-    text-align: center;
-    color: #4a707a;
-    font-size: var(--author-size);
-    font-weight: 500;
-    margin-bottom: var(--author-bottom);
-    padding: 0; }
   .conthead .conthead__machine {
     font-family: Consolas;
     font-size: var(--machine-size);
-    font-weight: 800;
+    font-weight: 700;
+    letter-spacing: 0px;
+    word-spacing: -5px;
     margin-bottom: var(--machine-bottom);
+    margin-top: var(--machine-top);
+    margin-left: var(--machine-left);
     width: var(--machine-width); }
     .conthead .conthead__machine .sys {
       color: #b79abc; }
@@ -128,9 +126,9 @@ header {
       margin-top: 5px; }
 
 .ghost {
-  border: 1.2px solid;
+  border: 1px solid;
   border-radius: 20px;
-  padding: 8px 25px;
+  padding: 7px 20px;
   text-align: center; }
 
 .conthead__button {
@@ -138,7 +136,7 @@ header {
   color: #4a707a;
   font-size: 12.5px;
   font-weight: 500;
-  box-shadow: 0 8px 30px 5px rgba(74, 112, 122, 0.8);
+  box-shadow: 0 8px 20px 5px rgba(74, 112, 122, 0.8);
   transition: background-color .5s ease-in;
   transition: color .5s ease-in; }
 
@@ -598,45 +596,57 @@ footer {
 /* Media Query*/
 @media all and (min-width: 960px) and (max-width: 1200px) {
   :root {
-    --author-size: 16px;
-    --logo-width: 125px;
-    --machine-size: 13.5px;
-    --machine-width: 22.5%; } }
+    --logo-width: 160px;
+    --machine-size: 14px;
+    --machine-width: 25%;
+    --machine-left: 8%;
+    --logo-top: 12%; } }
 @media all and (min-width: 768px) and (max-width: 960px) {
   :root {
-    --logo-top: 12.5%;
-    --author-size: 16px;
-    --logo-width: 120px;
-    --machine-size: 13.25px;
-    --machine-width: 30%; } }
+    --logo-top: 15%;
+    --logo-width: 165px;
+    --machine-size: 14px;
+    --machine-width: 30%;
+    --machine-left: 6%;
+    --nav-size: 13px; } }
 @media all and (min-width: 600px) and (max-width: 768px) {
   :root {
-    --author-size: 18px;
-    --nav-size: 13.5px;
-    --machine-size: 13.5px;
+    --nav-size: 12.5px;
+    --machine-size: 14.5px;
     --nets-size: 14px;
     --nets-size-hover: 19px;
     /*-----------------*/
-    --nav-height: 65px;
+    --nav-height: 50px;
     /*-----------------*/
-    --logo-width: 120px;
+    --logo-width: 165px;
     --machine-width: 36%;
     /*-----------------*/
-    --author-bottom: 40px;
     --machine-bottom: 40px;
+    --machine-left: 8%;
     /*-----------------*/
     --nav-margin: 25px;
     --content-top: 15px;
     /*-----------------*/
     --nets-top: 15%;
-    --logo-top: 15%; } }
+    --logo-top: 20%; } }
 @media only screen and (min-width: 480px) and (max-width: 600px) {
   :root {
-    --machine-width: 36%; } }
+    --logo-width: 165px;
+    --machine-width: 42.5%;
+    --machine-left: 2%;
+    --machine-bottom: 65px;
+    --machine-top: 9%;
+    --logo-top: 12.5%;
+    --machine-size: 13.5px; } }
 @media only screen and (max-width: 480px) {
   :root {
+    --logo-top: 18%;
+    --machine-bottom: 65px;
+    --machine-top: 10%;
+    --logo-width: 170px;
     --machine-size: 13.5px;
-    --machine-width: 60%; } }
+    --machine-width: 60%;
+    --machine-left: 8%; } }
 
 @media only screen and (max-width: 600px) {
   .nets {
@@ -671,9 +681,9 @@ footer {
       -webkit-clip-path: circle(141.4% at 100% 0);
       clip-path: circle(141.4% at 100% 0); }
     .navbar .navbar__hamburger {
-      padding-top: 45px;
+      padding-top: 55px;
       display: block;
-      margin-right: 35px;
+      margin-right: 50px;
       color: white;
       font-size: 30px;
       position: absolute; }

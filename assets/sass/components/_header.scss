@@ -1,23 +1,23 @@
 :root {
-    --author-size: 20px;
     --nav-size: 14px;
-    --machine-size: 14.5px;
+    --machine-size: 15.5px;
     --nets-size: 17.5px;
     --nets-size-hover: 22px;
     /*-----------------*/
     --nav-height: 50px;
     /*-----------------*/
-    --logo-width: 150px;
-    --machine-width: 16%;
+    --logo-width: 190px;
+    --machine-width: 25%;
+    --machine-left: 10%;
     /*-----------------*/
-    --author-bottom: 60px;
-    --machine-bottom: 40px;
+    --machine-bottom: 50px;
+    --machine-top: 4%;
     /*-----------------*/
     --nav-margin: 40px;
     --content-top: 10px;
     /*-----------------*/
     --nets-top: 40%;
-    --logo-top: 8%;
+    --logo-top: 9%;
 }
 
 header {
@@ -88,7 +88,7 @@ header {
 .conthead {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     height: auto;
     width: 100%;
@@ -97,24 +97,21 @@ header {
         margin-top: var(--logo-top);
         display: flex;
         justify-content: center;
+        margin-bottom: 15px;
         img {
             width: var(--logo-width);
             height: auto;
         }
     }
-    .conthead__author {
-        text-align: center;
-        color: $blue1;
-        font-size: var(--author-size);
-        font-weight: 500;
-        margin-bottom: var(--author-bottom);
-        padding: 0;
-    }
     .conthead__machine {
         font-family: Consolas;
         font-size: var(--machine-size);
-        font-weight: 800;
+        font-weight: 700;
+        letter-spacing: 0px;
+        word-spacing: -5px;
         margin-bottom: var(--machine-bottom);
+        margin-top: var(--machine-top);
+        margin-left: var(--machine-left);
         width: var(--machine-width);
         .sys {
             color: #b79abc;

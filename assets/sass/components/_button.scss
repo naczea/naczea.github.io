@@ -1,7 +1,7 @@
 .ghost {
-    border: 1.2px solid;
+    border: 1px solid;
     border-radius: 20px;
-    padding: 8px 25px;
+    padding: 7px 20px;
     text-align: center;
 }
 
@@ -10,7 +10,7 @@
     color: $blue1;
     font-size: 12.5px;
     font-weight: 500;
-    box-shadow: 0 8px 30px 5px rgba($blue1, $alpha: 0.8);
+    box-shadow: 0 8px 20px 5px rgba($blue1, $alpha: 0.8);
     transition: background-color .5s ease-in;
     transition: color .5s ease-in;
 }
