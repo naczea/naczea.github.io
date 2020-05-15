@@ -6,7 +6,7 @@ $correo = $_POST['mailf'];
 $mensaje = $_POST['messagef'];
 
 //Datos para el correo
-$destino = "nicolas_correa98@outlook.com"
+$destino = "nicolas_correa98@outlook.com";
 $asunto = $_POST['affairf'];
 
 $carta = "De: $nombre \n";
