@@ -6,7 +6,7 @@ $correo = $_POST['mailf'];
 $mensaje = $_POST['messagef'];
 
 //Datos para el correo
-$destino = "nicolas_correa98@outlook.com";
+$destino = "nico.acz21@gmail.com";
 $asunto = $_POST['affairf'];
 
 $carta = "De: $nombre \n";
@@ -14,6 +14,8 @@ $carta .= "Correo: $correo \n";
 $carta .= "Mensaje: $mensaje";
 
 //Enviando mensaje
-mail($destino,$asunto,$carta);
-
+$mail = mail($destino,$asunto,$carta);
+if($mail) {
+    echo "<h4>MENSAJE ENVIADO<h4>";
+}
 ?>
