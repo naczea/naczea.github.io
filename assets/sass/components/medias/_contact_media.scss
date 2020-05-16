@@ -24,7 +24,7 @@
     }
 }
 
-@media all and (max-width: 599px) {
+@media all and (max-width: 600px) {
     .contact {
         margin-bottom: 40px;
         flex-direction: column;
@@ -32,11 +32,11 @@
             width: 100%;
             p {
                 margin-bottom: 8%;
-                font-size: 17px;
-                font-weight: 600;
+                font-size: 16px;
+                font-weight: 500;
                 line-height: 30px;
-                letter-spacing: 2px;
-                padding: 0 7%;
+                letter-spacing: 0px;
+                padding: 0 0%;
             }
             img {
                 margin-top: 10%;
