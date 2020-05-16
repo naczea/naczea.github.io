@@ -20,12 +20,12 @@ ul {
 :root {
   --nav-size: 14px;
   --machine-size: 15.5px;
-  --nets-size: 17.5px;
-  --nets-size-hover: 22px;
+  --nets-size: 18.5px;
+  --nets-size-hover: 23px;
   /*-----------------*/
   --nav-height: 50px;
   /*-----------------*/
-  --logo-width: 190px;
+  --logo-width: 200px;
   --machine-width: 25%;
   --machine-left: 10%;
   /*-----------------*/
@@ -167,41 +167,40 @@ header {
 @media all and (min-width: 1200px) and (max-width: 1400px) {
   .datacv__button {
     font-size: 13.5px; } }
-@media all and (min-width: 960px) and (max-width: 1199px) {
+@media all and (min-width: 960px) and (max-width: 1200px) {
   .datacv__button {
     font-size: 12px; } }
-@media all and (min-width: 768px) and (max-width: 959px) {
+@media all and (min-width: 768px) and (max-width: 960px) {
   .datacv__button {
     font-size: 13px;
     border-radius: 35px;
     margin-left: 15px;
     padding: 12px 15px;
     font-weight: 600; } }
-@media all and (min-width: 600px) and (max-width: 767px) {
+@media all and (min-width: 600px) and (max-width: 768px) {
   .datacv__button {
     font-size: 12px;
     border-radius: 40px;
     margin-left: 10px;
     padding: 12px 10px;
     font-weight: 600; } }
-@media all and (max-width: 599px) {
+@media all and (max-width: 600px) {
   .datacv__button {
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 60px;
-    margin-left: 20px;
     padding: 12px 10px;
     font-weight: 600;
-    margin-bottom: 30px; } }
+    margin-bottom: 15px; } }
 :root {
   --datap-title-size: 20px;
-  --datap-items-size: 14px;
+  --datap-items-size: 15px;
   --datacv-title-size: 20px;
-  --datacv-p-size: 13.5px;
+  --datacv-p-size: 14px;
   /*-----------------*/
   --aboutme-margin: 70px;
   --aboutme-width: 77.5%;
   /*-----------------*/
-  --photo-width: 195px;
+  --photo-width: 180px;
   /*-----------------*/
   --datacv-padding-left: 15%;
   --datacv-padding-right: 8%;
@@ -210,7 +209,7 @@ header {
 
 .aboutme {
   width: var(--aboutme-width);
-  height: 82vh;
+  height: auto;
   margin: auto;
   margin-top: var(--aboutme-margin);
   margin-bottom: var(--aboutme-margin);
@@ -239,7 +238,7 @@ header {
     font-size: var(--datap-items-size);
     font-weight: 500; }
   .datap .datap__photo {
-    margin-top: 5%;
+    margin-top: 10%;
     width: var(--photo-width);
     display: flex;
     justify-content: center;
@@ -269,7 +268,7 @@ header {
     font-weight: bold;
     font-size: var(--datacv-title-size); }
   .datacv .datacv__p {
-    margin-top: 3%;
+    margin-top: 4%;
     align-self: center;
     color: white;
     font-size: var(--datacv-p-size);
@@ -277,7 +276,7 @@ header {
     line-height: var(--datacv-p-lineheight);
     font-weight: normal; }
   .datacv .datacv_buttons {
-    margin-top: 10%;
+    margin-top: 12%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -287,7 +286,7 @@ header {
   --port_title_size: 40px;
   --cont_li_size: 16px;
   /*-----------------*/
-  --port_height: 215px;
+  --port_height: 190px;
   --cont_width: 370px;
   /*-----------------*/
   --port_title_spacing: 16.5px; }
@@ -596,11 +595,11 @@ footer {
 /* Media Query*/
 @media all and (min-width: 960px) and (max-width: 1200px) {
   :root {
-    --logo-width: 160px;
+    --logo-width: 180px;
     --machine-size: 14px;
     --machine-width: 25%;
     --machine-left: 8%;
-    --logo-top: 12%; } }
+    --logo-top: 7.5%; } }
 @media all and (min-width: 768px) and (max-width: 960px) {
   :root {
     --logo-top: 15%;
@@ -631,22 +630,22 @@ footer {
     --logo-top: 20%; } }
 @media only screen and (min-width: 480px) and (max-width: 600px) {
   :root {
-    --logo-width: 165px;
-    --machine-width: 42.5%;
-    --machine-left: 2%;
+    --logo-width: 185px;
+    --machine-width: 100%;
+    --machine-left: 0%;
     --machine-bottom: 65px;
-    --machine-top: 9%;
-    --logo-top: 12.5%;
-    --machine-size: 13.5px; } }
+    --machine-top: 12%;
+    --logo-top: 18%;
+    --machine-size: 18px; } }
 @media only screen and (max-width: 480px) {
   :root {
-    --logo-top: 18%;
+    --logo-top: 20%;
     --machine-bottom: 65px;
-    --machine-top: 10%;
-    --logo-width: 170px;
-    --machine-size: 13.5px;
-    --machine-width: 60%;
-    --machine-left: 8%; } }
+    --machine-top: 12%;
+    --logo-width: 180px;
+    --machine-size: 18px;
+    --machine-width: 100%;
+    --machine-left: 0%; } }
 
 @media only screen and (max-width: 600px) {
   .nets {
@@ -656,12 +655,15 @@ footer {
     height: 50px;
     position: static;
     display: flex;
-    justify-content: flex-end; }
+    justify-content: flex-start; }
     .navbar .navbar__list {
       position: fixed;
-      background: #1d976c;
-      background: -webkit-linear-gradient(to right, #93f9b9, #1d976c);
-      background: linear-gradient(to right, #93f9b9, #1d976c);
+      background: #4ECDC4;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #556270, #4ECDC4);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #556270, #4ECDC4);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       top: 0;
       right: 0;
       width: 100%;
@@ -670,25 +672,30 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      clip-path: circle(0% at 100% 0);
-      transition: ease-in-out 0.45s; }
+      clip-path: circle(0% at 0 0);
+      transition: ease-in-out 0.5s; }
       .navbar .navbar__list li a {
         color: white;
         font-size: 19px;
         font-weight: 600;
         letter-spacing: 2px; }
     .navbar .menu2 {
-      -webkit-clip-path: circle(141.4% at 100% 0);
-      clip-path: circle(141.4% at 100% 0); }
+      -webkit-clip-path: circle(140.9% at 0 0);
+      clip-path: circle(140.9% at 0 0); }
     .navbar .navbar__hamburger {
       padding-top: 55px;
       display: block;
-      margin-right: 50px;
+      margin-left: 40px;
       color: white;
       font-size: 30px;
       position: absolute; }
       .navbar .navbar__hamburger #icon2 {
-        display: none; } }
+        display: none; }
+
+  .conthead .conthead__machine {
+    text-align: center;
+    font-family: Consolas;
+    font-weight: 800; } }
 @media all and (min-width: 1200px) and (max-width: 1400px) {
   :root {
     --datap-title-size: 17px;
@@ -747,7 +754,7 @@ footer {
     /*-----------------*/
     --datacv-p-lineheight: 25px; } }
 
-@media all and (max-width: 599px) {
+@media all and (max-width: 600px) {
   .aboutme {
     width: 78%;
     height: auto;
@@ -773,24 +780,24 @@ footer {
       align-self: center;
       color: white;
       font-weight: 600;
-      letter-spacing: 3px;
-      font-size: 15px; }
+      letter-spacing: 1px;
+      font-size: 18px; }
     .datap .datap__items {
       margin-left: 15px;
       color: #5d9e8c;
       line-height: 20px;
-      font-size: 11px;
+      font-size: 13.5px;
       font-weight: 500; }
     .datap .datap__photo {
       margin-top: 5%;
-      width: 160px;
+      width: 170px;
       display: flex;
       justify-content: center;
       align-items: center;
       height: auto;
       align-self: center; }
       .datap .datap__photo img {
-        width: 150px;
+        width: 170px;
         height: auto; }
 
   .datacv {
@@ -802,7 +809,7 @@ footer {
     background-color: #7697a0;
     padding-left: 12%;
     padding-right: 12%;
-    margin-top: -10px;
+    margin-top: -40px;
     border-radius: 70px;
     box-shadow: 0 -15px 30px 2.5px rgba(0, 0, 0, 0.3); }
     .datacv .datacv__title {
@@ -822,10 +829,12 @@ footer {
       line-height: 22.5px;
       font-weight: normal; }
     .datacv .datacv_buttons {
-      margin-top: 10%;
+      margin-top: 8%;
       display: flex;
       justify-content: center;
-      align-items: center; } }
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 10px; } }
 @media all and (min-width: 600px) and (max-width: 1200px) {
   :root {
     --port_title_size: 45px;

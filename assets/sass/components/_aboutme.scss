@@ -1,13 +1,13 @@
 :root {
     --datap-title-size: 20px;
-    --datap-items-size: 14px;
+    --datap-items-size: 15px;
     --datacv-title-size: 20px;
-    --datacv-p-size: 13.5px;
+    --datacv-p-size: 14px;
     /*-----------------*/
     --aboutme-margin: 70px;
     --aboutme-width: 77.5%;
     /*-----------------*/
-    --photo-width: 195px;
+    --photo-width: 180px;
     /*-----------------*/
     --datacv-padding-left: 15%;
     --datacv-padding-right: 8%;
@@ -17,7 +17,7 @@
 
 .aboutme {
     width: var(--aboutme-width);
-    height: 82vh;
+    height: auto;
     margin: auto;
     margin-top: var(--aboutme-margin);
     margin-bottom: var(--aboutme-margin);
@@ -49,7 +49,7 @@
         font-weight: 500;
     }
     .datap__photo {
-        margin-top: 5%;
+        margin-top: 10%;
         width: var(--photo-width);
         display: flex;
         justify-content: center;
@@ -83,7 +83,7 @@
         font-size: var(--datacv-title-size);
     }
     .datacv__p {
-        margin-top: 3%;
+        margin-top: 4%;
         align-self: center;
         color: white;
         font-size: var(--datacv-p-size);
@@ -92,7 +92,7 @@
         font-weight: normal;
     }
     .datacv_buttons {
-        margin-top: 10%;
+        margin-top: 12%;
         display: flex;
         flex-direction: row;
         justify-content: center;
