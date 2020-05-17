@@ -47,6 +47,15 @@
 
 /**************************************************************************/
 
+@media all and (max-height: 700px) {
+    .conthead__button {
+        background-color: white;
+    }
+    .ghost {
+        border: 1.3px solid;
+    }
+}
+
 @media all and (min-width: 1200px) and (max-width: 1400px) {
     .datacv__button {
         font-size: 13.5px;
