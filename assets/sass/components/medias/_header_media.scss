@@ -41,14 +41,14 @@
         --machine-bottom: 65px;
         --machine-top: 12%;
         --logo-top: 18%;
-        --machine-size: 18px;
+        --machine-size: 18.5px;
     }
     @media only screen and (max-width: 480px) {
         --logo-top: 20%;
         --machine-bottom: 65px;
         --machine-top: 12%;
         --logo-width: 180px;
-        --machine-size: 18px;
+        --machine-size: 18.5px;
         --machine-width: 100%;
         --machine-left: 0%;
     }
@@ -82,9 +82,9 @@
             clip-path: circle(0% at 0 0);
             transition: ease-in-out 0.5s;
             li a {
-                color: white;
-                font-size: 19px;
-                font-weight: 600;
+                color: $white2;
+                font-size: 30px;
+                font-weight: bold;
                 letter-spacing: 2px;
             }
         }
@@ -107,7 +107,7 @@
     .conthead {
         .conthead__machine {
             text-align: center;
-            font-family: Consolas;
+            font-family: consolasty;
             font-weight: 800;
         }
     }

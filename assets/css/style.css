@@ -17,6 +17,9 @@ ul {
 :focus {
   outline: none; }
 
+@font-face {
+  font-family: consolasty;
+  src: url(../../../typography/consolas.ttf); }
 :root {
   --nav-size: 14px;
   --machine-size: 15.5px;
@@ -105,7 +108,7 @@ header {
       width: var(--logo-width);
       height: auto; }
   .conthead .conthead__machine {
-    font-family: Consolas;
+    font-family: consolasty;
     font-size: var(--machine-size);
     font-weight: 700;
     letter-spacing: 0px;
@@ -233,7 +236,7 @@ header {
     font-size: var(--datap-title-size); }
   .datap .datap__items {
     margin-left: 30px;
-    color: #5d9e8c;
+    color: #4a707a;
     line-height: 28px;
     font-size: var(--datap-items-size);
     font-weight: 500; }
@@ -365,14 +368,12 @@ header {
   --form_label_size: 17px;
   --form_input_size: 15px;
   --form_submit_size: 20px;
-  /*-----------------*/
-  --contact_bottom: 30px; }
+  /*-----------------*/ }
 
 .contact {
   width: 100%;
   height: auto;
   margin-top: 30px;
-  margin-bottom: var(--contact_bottom);
   display: flex; }
   .contact .contact__illustration {
     width: 50%;
@@ -513,8 +514,7 @@ footer {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: auto; }
+  justify-content: space-evenly; }
   footer .footer__logo {
     width: 25%;
     display: flex;
@@ -636,14 +636,14 @@ footer {
     --machine-bottom: 65px;
     --machine-top: 12%;
     --logo-top: 18%;
-    --machine-size: 18px; } }
+    --machine-size: 18.5px; } }
 @media only screen and (max-width: 480px) {
   :root {
     --logo-top: 20%;
     --machine-bottom: 65px;
     --machine-top: 12%;
     --logo-width: 180px;
-    --machine-size: 18px;
+    --machine-size: 18.5px;
     --machine-width: 100%;
     --machine-left: 0%; } }
 
@@ -675,9 +675,9 @@ footer {
       clip-path: circle(0% at 0 0);
       transition: ease-in-out 0.5s; }
       .navbar .navbar__list li a {
-        color: white;
-        font-size: 19px;
-        font-weight: 600;
+        color: #ddddda;
+        font-size: 30px;
+        font-weight: bold;
         letter-spacing: 2px; }
     .navbar .menu2 {
       -webkit-clip-path: circle(140.9% at 0 0);
@@ -694,7 +694,7 @@ footer {
 
   .conthead .conthead__machine {
     text-align: center;
-    font-family: Consolas;
+    font-family: consolasty;
     font-weight: 800; } }
 @media all and (min-width: 1200px) and (max-width: 1400px) {
   :root {
@@ -756,7 +756,7 @@ footer {
 
 @media all and (max-width: 600px) {
   .aboutme {
-    width: 78%;
+    width: 87%;
     height: auto;
     margin: auto;
     margin-top: 40px;
@@ -784,7 +784,7 @@ footer {
       font-size: 18px; }
     .datap .datap__items {
       margin-left: 15px;
-      color: #5d9e8c;
+      color: #4a707a;
       line-height: 20px;
       font-size: 13.5px;
       font-weight: 500; }
@@ -876,12 +876,10 @@ footer {
     --form_label_size: 13px;
     --form_input_size: 12px;
     --form_submit_size: 15px;
-    /*-----------------*/
-    --contact_bottom: 1px; } }
+    /*-----------------*/ } }
 
 @media all and (max-width: 600px) {
   .contact {
-    margin-bottom: 40px;
     flex-direction: column; }
     .contact .contact__illustration {
       width: 100%; }

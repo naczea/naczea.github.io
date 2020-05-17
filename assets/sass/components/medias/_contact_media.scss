@@ -20,13 +20,11 @@
         --form_input_size: 12px;
         --form_submit_size: 15px;
         /*-----------------*/
-        --contact_bottom: 1px;
     }
 }
 
 @media all and (max-width: 600px) {
     .contact {
-        margin-bottom: 40px;
         flex-direction: column;
         .contact__illustration {
             width: 100%;
