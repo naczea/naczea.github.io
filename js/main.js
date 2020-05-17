@@ -1,23 +1,6 @@
 let ubicacionPrincipal = window.pageYOffset;
 let actualWidth = screen.width;
 
-window.addEventListener("scroll", function() {
-    if (actualWidth >= "600") {
-        let despActual = window.pageYOffset;
-        if (ubicacionPrincipal >= despActual) {
-            document.getElementsByTagName("nav")[0].style.top = "0px"
-            document.getElementsByTagName("nav")[0].style.backgroundColor = "white"
-        } else {
-            document.getElementsByTagName("nav")[0].style.top = "-100px"
-
-        }
-        if (despActual == "0") {
-            document.getElementsByTagName("nav")[0].style.backgroundColor = "initial"
-        }
-        ubicacionPrincipal = despActual
-    }
-})
-
 //MENU
 
 let navhead = document.querySelectorAll(".navbar__list")[0];
@@ -56,7 +39,7 @@ AOS.init();
 //TYPED
 
 const type = new Typed('.typed', {
-    strings: ['software', 'web', 'electronic'],
+    strings: ['software', 'web', 'electronics'],
     typeSpeed: 70, //velocidad en poner letras
     startDelay: 300, //tiempo en empezar
     backSpeed: 75, //tiempo en borrar
