@@ -39,7 +39,7 @@ ul {
   --content-top: 10px;
   /*-----------------*/
   --nets-top: 40%;
-  --logo-top: 9%; }
+  --logo-top: 5%; }
 
 header {
   background-image: url(../../img/loginv4.svg);
@@ -597,36 +597,36 @@ footer {
     --logo-width: 180px;
     --machine-size: 14px;
     --machine-width: 25%;
-    --machine-left: 8%;
-    --logo-top: 7.5%; } }
+    --machine-left: 7%;
+    --logo-top: 6%; } }
 @media all and (min-width: 768px) and (max-width: 960px) {
   :root {
-    --logo-top: 15%;
+    --logo-top: 7.5%;
     --logo-width: 165px;
     --machine-size: 14px;
-    --machine-width: 30%;
+    --machine-width: 32%;
     --machine-left: 6%;
     --nav-size: 13px; } }
 @media all and (min-width: 600px) and (max-width: 768px) {
   :root {
     --nav-size: 12.5px;
     --machine-size: 14.5px;
-    --nets-size: 14px;
-    --nets-size-hover: 19px;
+    --nets-size: 16px;
+    --nets-size-hover: 20px;
     /*-----------------*/
     --nav-height: 50px;
     /*-----------------*/
     --logo-width: 165px;
-    --machine-width: 36%;
+    --machine-width: 40%;
     /*-----------------*/
     --machine-bottom: 40px;
-    --machine-left: 8%;
+    --machine-left: 7.5%;
     /*-----------------*/
     --nav-margin: 25px;
     --content-top: 15px;
     /*-----------------*/
     --nets-top: 15%;
-    --logo-top: 20%; } }
+    --logo-top: 11%; } }
 @media only screen and (min-width: 480px) and (max-width: 600px) {
   :root {
     --logo-width: 185px;
@@ -634,11 +634,11 @@ footer {
     --machine-left: 0%;
     --machine-bottom: 65px;
     --machine-top: 12%;
-    --logo-top: 18%;
+    --logo-top: 16%;
     --machine-size: 18.5px; } }
 @media only screen and (max-width: 480px) {
   :root {
-    --logo-top: 20%;
+    --logo-top: 18%;
     --machine-bottom: 65px;
     --machine-top: 12%;
     --logo-width: 180px;
