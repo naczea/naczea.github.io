@@ -47,7 +47,16 @@
 
 /**************************************************************************/
 
-@media all and (max-height: 700px) {
+@media all and (max-height: 750px) {
+    .conthead__button {
+        background-color: white;
+    }
+    .ghost {
+        border: 1.3px solid;
+    }
+}
+
+@media all and (max-width: 960px) {
     .conthead__button {
         background-color: white;
     }
