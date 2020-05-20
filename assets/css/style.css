@@ -650,15 +650,16 @@ footer {
     --logo-width: 185px;
     --machine-width: 100%;
     --machine-left: 0%;
-    --machine-bottom: 65px;
-    --machine-top: 12%;
-    --logo-top: 16%;
+    --machine-bottom: 40px;
+    --machine-top: 40px;
+    --content-top: 60px;
     --machine-size: 18.5px; } }
 @media only screen and (max-width: 480px) {
   :root {
-    --logo-top: 18%;
+    --logo-top: 90px;
     --machine-bottom: 65px;
-    --machine-top: 12%;
+    --machine-top: 40px;
+    --machine-bottom: 40px;
     --logo-width: 180px;
     --machine-size: 18.5px;
     --machine-width: 100%;
