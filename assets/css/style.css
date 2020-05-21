@@ -93,11 +93,10 @@ header {
 .conthead {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  height: auto;
-  width: 100%;
-  margin-top: var(--content-top); }
+  height: 100vh !important;
+  width: 100%; }
   .conthead .conthead__logo {
     margin-top: var(--logo-top);
     display: flex;
