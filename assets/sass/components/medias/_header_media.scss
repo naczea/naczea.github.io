@@ -66,11 +66,12 @@
         display: none;
     }
     .navbar {
-        height: 50px;
+        height: 8vh;
         position: static;
         display: flex;
         justify-content: flex-start;
         .navbar__list {
+
             position: fixed;
             background: #4ECDC4;
             /* fallback for old browsers */
@@ -112,10 +113,28 @@
         }
     }
     .conthead {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 92vh !important;
+        width: 100%;
+        .conthead__logo {
+            margin: unset;
+            padding-top: 10vh;
+            padding-bottom: 7vh;
+            display: flex;
+            justify-content: center;
+            img {
+                width: var(--logo-width);
+                height: auto;
+            }
+        }
         .conthead__machine {
-            text-align: center;
             font-family: consolasty;
-            font-weight: 800;
+            font-size: 14px;
+            text-align: center;
+            width: 100%;
+            margin: unset;
         }
     }
 }

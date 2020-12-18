@@ -133,17 +133,18 @@ header {
   text-align: center; }
 
 .conthead__button {
-  border-color: #4a707a;
+  border-radius: 20px;
+  padding: 10px 30px;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 0.8), -2px -2px 12px rgba(255, 255, 255, 0.8), inset 2px 2px 4px rgba(255, 255, 255, 0.85), 2px 2px 8px rgba(0, 0, 0, 0.5);
   color: #4a707a;
   font-size: 12.5px;
   font-weight: 500;
-  box-shadow: 0 8px 20px 5px rgba(74, 112, 122, 0.8);
-  transition: background-color .5s ease-in;
-  transition: color .5s ease-in; }
+  transition: .2s ease-in;
+  border: none; }
 
 .conthead__button:hover {
-  color: white;
-  background-color: rgba(93, 158, 140, 0.6); }
+  color: #4f9883;
+  font-weight: bold; }
 
 /************************************************************************/
 .ghost2 {
@@ -153,7 +154,10 @@ header {
   text-align: center; }
 
 .datacv__button {
-  border-color: white;
+  border-radius: 20px;
+  padding: 10px 30px;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 0.8), -2px -2px 12px rgba(255, 255, 255, 0.8), inset 2px 2px 4px rgba(255, 255, 255, 0.85), 2px 2px 8px rgba(0, 0, 0, 0.5);
+  border: none;
   color: white;
   font-size: 17px;
   font-weight: 500;
@@ -166,15 +170,9 @@ header {
 
 /**************************************************************************/
 @media all and (max-height: 750px) {
-  .conthead__button {
-    background-color: white; }
-
   .ghost {
     border: 1.3px solid; } }
 @media all and (max-width: 960px) {
-  .conthead__button {
-    background-color: white; }
-
   .ghost {
     border: 1.3px solid; } }
 @media all and (min-width: 1200px) and (max-width: 1400px) {
@@ -203,7 +201,18 @@ header {
     border-radius: 60px;
     padding: 12px 10px;
     font-weight: 600;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+
+  .conthead__button {
+    margin-top: 5vh;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: #4a707a;
+    font-size: 12px !important;
+    font-weight: 500;
+    transition: .2s ease-in;
+    border: none !important;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 0.8), -2px -2px 12px rgba(255, 255, 255, 0.8), inset 2px 2px 4px rgba(255, 255, 255, 0.85), 2px 2px 8px rgba(0, 0, 0, 0.5); } }
 :root {
   --datap-title-size: 20px;
   --datap-items-size: 15px;
@@ -356,7 +365,9 @@ header {
       .services .services__cont .cont h2 {
         color: #5d9e8c;
         margin-top: 20px;
-        margin-left: 10px; }
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 20px; }
       .services .services__cont .cont ul {
         height: 65%;
         display: flex;
@@ -669,7 +680,7 @@ footer {
     display: none; }
 
   .navbar {
-    height: 50px;
+    height: 8vh;
     position: static;
     display: flex;
     justify-content: flex-start; }
@@ -709,10 +720,27 @@ footer {
       .navbar .navbar__hamburger #icon2 {
         display: none; }
 
-  .conthead .conthead__machine {
-    text-align: center;
-    font-family: consolasty;
-    font-weight: 800; } }
+  .conthead {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 92vh !important;
+    width: 100%; }
+    .conthead .conthead__logo {
+      margin: unset;
+      padding-top: 10vh;
+      padding-bottom: 7vh;
+      display: flex;
+      justify-content: center; }
+      .conthead .conthead__logo img {
+        width: var(--logo-width);
+        height: auto; }
+    .conthead .conthead__machine {
+      font-family: consolasty;
+      font-size: 14px;
+      text-align: center;
+      width: 100%;
+      margin: unset; } }
 @media all and (min-width: 1200px) and (max-width: 1400px) {
   :root {
     --datap-title-size: 17px;
